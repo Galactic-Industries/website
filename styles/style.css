@@ -1,38 +1,61 @@
-/* General Styles */
-body {
+/* Resetting margins and paddings */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and page background */
+body {
+    background-color: black;
+    color: white;
     font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
-}
-
-/* Centered Box */
-.center-text { /* Corrected selector to class */
     text-align: center;
-    padding: 2rem;
-    background-color: #000;
 }
 
-/* Coming Soon Style */
-.coming-soon {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-    margin-top: 1rem;
+/* Header styling */
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
-/* Footer */
+header p {
+    font-size: 1.5em;
+}
+
+/* Footer styling */
 footer {
-    position: absolute;
-    bottom: 1rem;
-    text-align: center;
+    background-color: black;
+    color: grey;
     width: 100%;
-    font-size: 0.9rem;
-    color: #aaa;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
 }
