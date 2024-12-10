@@ -15,6 +15,7 @@ body {
 /* Centered Box */
 .center-text { /* Corrected selector to class */
     text-align: center;
+    padding: 2rem;
     background-color: #000;
 }
 
